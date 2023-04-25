@@ -3,6 +3,7 @@ import drugoLogo from './assets/drugo.jpg'
 import twitterLogo from './assets/twitter.svg'
 import linkedinLogo from './assets/linkedin.svg'
 import unsplashLogo from './assets/unsplash.svg'
+import githubLogo from './assets/github.svg'
 import './App.css'
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
       </a>
       <a href="https://unsplash.com/@enricodvn" target="_blank">
         <img src={unsplashLogo} className="logo medialogo" alt="Unsplash logo" />
+      </a>
+      <a href="https://github.com/enricodvn" target="_blank">
+        <img src={githubLogo} className="logo medialogo" alt="Github logo" />
       </a>
       </p>
       </div>
