@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import drugoLogo from './assets/drugo.jpg'
 import twitterLogo from './assets/twitter.svg'
 import linkedinLogo from './assets/linkedin.svg'
@@ -12,7 +11,7 @@ function App() {
     <>
       <div>
       <a href="">
-        <img src={drugoLogo} class="roundlogo" alt="Drugo logo" />
+        <img src={drugoLogo} className="roundlogo" alt="Drugo logo" />
       </a>
       <h2> Hi! My name is Enrico but people call me Drugo. </h2>
 
