@@ -13,7 +13,14 @@ function App() {
         <nav aria-label="Site sections">
           <ul role="list">
             <li><a href="/me">About me</a></li>
-            <li><a href="#">Articles</a></li>
+            <li>
+              <div class="dropdown">
+                <a href="#">Articles</a>
+                <div class="dropdown-child">
+                  <a href="#">Personal</a>
+                </div>
+              </div>
+            </li>
           </ul>
         </nav>
         <nav class="pull-right" aria-label="Social media links">
