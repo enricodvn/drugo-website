@@ -1,8 +1,17 @@
-#root {
-  max-width: 1280px;
+.content {
+  max-width: 674px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #666699;
+}
+
+.pull-right {
+  margin-left: auto;
+}
+
+.medialogo {
+  min-width: 25px;
 }
 
 .logo {

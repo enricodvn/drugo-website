@@ -24,11 +24,16 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  /* margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
+  min-height: 100vh; */
   min-height: 100vh;
+  background-color: #666699;
+}
+
+.nav {
   background-color: #666699;
 }
 
@@ -63,11 +68,6 @@ button:focus-visible {
   -o-border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-}
-
-.medialogo{
-  width: 10%;
-  height: 10%;
 }
 
 @media (prefers-color-scheme: light) {
