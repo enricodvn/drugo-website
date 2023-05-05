@@ -6,12 +6,12 @@ import './App.css'
 import About from './pages/about_me'
 import Article from './pages/article'
 import Category from './pages/category'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
   return (
-    <>
+    <HashRouter>
       <header className="navbar nav">
         <nav aria-label="Site sections">
           <ul role="list">
@@ -20,7 +20,7 @@ function App() {
               <div className="dropdown">
                 <a href="#">Articles</a>
                 <div className="dropdown-child">
-                  <a href="/articles/personal">Personal</a>
+                  <Link to="/articles/personal">Personal</Link>
                 </div>
               </div>
             </li>
@@ -52,15 +52,13 @@ function App() {
         </nav>
       </header>
       <div className="content">
-      <BrowserRouter>
         <Routes>
           <Route path="/" element={<About/>} />
           <Route path="/articles/:category/:article/" element={<Article />} />
           <Route path="/articles/:category/" element={<Category />} />
         </Routes>
-      </BrowserRouter>
       </div>
-    </>
+    </HashRouter>
   )
 }
 
