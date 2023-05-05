@@ -55,8 +55,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<About/>} />
-          <Route path="/articles/:category/:article" element={<Article />} />
-          <Route path="/articles/:category" element={<Category />} />
+          <Route path="/articles/:category/:article/" element={<Article />} />
+          <Route path="/articles/:category/" element={<Category />} />
         </Routes>
       </BrowserRouter>
       </div>
