@@ -1,29 +1,32 @@
-import drugoLogo from './assets/drugo.jpg'
 import twitterLogo from './assets/twitter.svg'
 import linkedinLogo from './assets/linkedin.svg'
 import unsplashLogo from './assets/unsplash.svg'
 import githubLogo from './assets/github.svg'
 import './App.css'
+import About from './pages/about_me'
+import Article from './pages/article'
+import Category from './pages/category'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <header class="navbar nav">
+      <header className="navbar nav">
         <nav aria-label="Site sections">
           <ul role="list">
-            <li><a href="/me">About me</a></li>
+            <li><a href="/">About me</a></li>
             <li>
-              <div class="dropdown">
+              <div className="dropdown">
                 <a href="#">Articles</a>
-                <div class="dropdown-child">
-                  <a href="#">Personal</a>
+                <div className="dropdown-child">
+                  <a href="/articles/personal">Personal</a>
                 </div>
               </div>
             </li>
           </ul>
         </nav>
-        <nav class="pull-right" aria-label="Social media links">
+        <nav className="pull-right" aria-label="Social media links">
           <ul role="list">
             <li>
               <a href="https://twitter.com/EnricoDVN" target="_blank">
@@ -48,15 +51,14 @@ function App() {
           </ul>
         </nav>
       </header>
-      <div class="content">
-      <a href="">
-        <img src={drugoLogo} className="roundlogo" alt="Drugo logo" />
-      </a>
-
-      <h2> Welcome to my personal website! </h2>
-
-      <p>Hi! My name is Enrico but people call me Drugo.</p>
-
+      <div className="content">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<About/>} />
+          <Route path="/articles/:category/:article" element={<Article />} />
+          <Route path="/articles/:category" element={<Category />} />
+        </Routes>
+      </BrowserRouter>
       </div>
     </>
   )
