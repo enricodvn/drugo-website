@@ -2,8 +2,11 @@
   max-width: 674px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
   background-color: #666699;
+}
+
+.text-centered{
+  text-align: center;
 }
 
 .pull-right {

@@ -6,7 +6,7 @@ import './App.css'
 import About from './pages/about_me'
 import Article from './pages/article'
 import Category from './pages/category'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
