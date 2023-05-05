@@ -19,7 +19,6 @@ function Category() {
     <div className="content">
       <ReactMarkdown
       components={{
-        // Rewrite `em`s (`*like so*`) to `i` with a red foreground color.
         a: ({node, ...props}) => <Link to={props.href} {...props} />
       }}
       children={categoryMd} />
