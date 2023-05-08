@@ -4,12 +4,12 @@ import { useParams } from 'react-router-dom'
 
 function Article() {
 
-  const { article } = useParams();
+  const { article, category } = useParams();
 
   const [articleMd, setArticleMd] = useState('');
 
   useEffect(() => {
-    fetch(`/articles/personal/${article}/en.md`)
+    fetch(`/articles/${category}/${article}/en.md`)
       .then(res => res.text())
       .then(res => setArticleMd(res));
   });
