@@ -21,6 +21,7 @@ function App() {
                 <a href="#">Articles</a>
                 <div className="dropdown-child">
                   <Link to="/articles/personal">Personal</Link>
+                  <Link to="/articles/front_end">Front end</Link>
                 </div>
               </div>
             </li>
