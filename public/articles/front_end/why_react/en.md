@@ -1,4 +1,4 @@
-# Why react?
+# Why React?
 
 It is a little ironic that my first technical post in this blog is about front end,
 since in my career I have focused more in back end development.
@@ -223,7 +223,7 @@ And the table could be rendered by calling:
 ```
 const route = fetch_route();  //fetch() server calls
 const tableRoot = document.getElementById('table-div');
-ReactDOM.render(buildPassengersDetails(route), appRoot);
+ReactDOM.render(buildPassengersDetails(route), tableRoot);
 ```
 
 As you can see, createElement receives either another element or an array of
@@ -312,6 +312,11 @@ in different files and combining it using modern es6 import statements.
 
 ```
 
+In the example above, our table component could be one of the components jsx files,
+and then could be reused by different pages, each of those getting data from their
+own sources, without code repetition and a good modularization, which could only
+be provided given this new way of doing things.
+
 They even created a tool to make it easy, called `create-react-app`, that bootstraps
 all the project folder structure along with the needed tools configs.
 
@@ -357,7 +362,7 @@ and fast to load for the browser, even optimizing images before bundling it toge
 
 And there is of course [next.js](https://nextjs.org/). Along with the optimization, it allows
 the user to define which parts of the application are SPAs, which one are static generated
-and the ones that are server side generated. I will cover these topics in a later topic.
+and the ones that are server side generated. I will cover these topics in a later post.
 It also has a lot of tools to integrate with the back-end, and services provided by
 vercel, as edge cached CDNs.
 
@@ -366,11 +371,11 @@ vercel, as edge cached CDNs.
 For the future, there is some new techs coming that in my opinion will change
 even further the front end development. One of which is [webassembly](https://webassembly.org/).
 
-The others I can remind for now is [flutter for web](https://flutter.dev/multi-platform/web) and
-[htmx](https://htmx.org/), which seems to integrate really well with python
+The others I can remind for now is [flutter for web](https://flutter.dev/multi-platform/web), and
+finally [htmx](https://htmx.org/), which seems to integrate really well with python
 back ends like Django.
 
-But I will cover these in another post, and I think JS and frameworks will still be
+But I will also cover these in another post, and I think JS and frameworks will still be
 used for a while.
 
 ## Conclusion
