@@ -13,7 +13,7 @@ function App() {
   return (
     <HashRouter>
       <header className="navbar nav">
-        <nav aria-label="Site sections">
+        <nav aria-label="Site sections" className="mobile-hidden">
           <ul role="list">
             <li><a href="/">About me</a></li>
             <li>
@@ -27,7 +27,21 @@ function App() {
             </li>
           </ul>
         </nav>
-        <nav className="pull-right" aria-label="Social media links">
+        <input type="checkbox" id="hamburger-input" className="burger-shower" />
+        <label id="hamburger-menu" htmlFor="hamburger-input" >
+          <nav id="sidebar-menu">
+            <ul>
+              <li><a href="/">About me</a></li>
+              <li><a href="#">Articles</a>
+                <ul>
+                <li><Link to="/articles/personal">Personal</Link></li>
+                <li><Link to="/articles/front_end">Front end</Link></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </label>
+        <nav className="pull-right mobile-hidden" aria-label="Social media links">
           <ul role="list">
             <li>
               <a href="https://twitter.com/EnricoDVN" target="_blank">

@@ -33,3 +33,61 @@
 .card {
   padding: 2em;
 }
+
+/* hamburger menu, based on https://alvarotrigo.com/blog/hamburger-menu-css-responsive/ */
+#hamburger-menu {
+  width: 50px;
+  height: 50px;
+  border: none;
+  display: none;
+  background: linear-gradient(
+      to bottom,
+      #3D0E61, #3D0E61 20%,
+      transparent 20%, transparent 40%,
+      #3D0E61 40%, #3D0E61 60%,
+      transparent 60%, transparent 80%,
+      #3D0E61 80%, #3D0E61 100%
+    );
+}
+
+#hamburger-menu ul{
+  font-size: 1.5rem;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu #sidebar-menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 50vw;
+  height: 100vh;
+  transition: 0.3s;
+  background: white;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu{
+  visibility: visible;
+  left: 0;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .mobile-hidden{
+    display: none;
+  };
+}
