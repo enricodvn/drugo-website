@@ -67,11 +67,10 @@
   width: 50vw;
   height: 100vh;
   transition: 0.3s;
-  background: white;
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: #666699;
+  border-color: #646cff;
+  border-right-width: thin;
+  border-right-style: solid;
 }
 
 #hamburger-input:checked + #hamburger-menu #sidebar-menu{
