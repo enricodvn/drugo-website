@@ -29,8 +29,8 @@ generated from templates and some markdown content (like readthedocs documentati
 and SPA are (mostly) a bunch (or one) JS files that renders the content dynamically
 in a single html page with Javascript.
 
-I will talk about why I chose it later, but since I already made a post talking
-about the marvels of React, I decided to go with SPA on this framework.
+I will also discuss in another post about why I chose it, but since I already made
+a post talking about the marvels of React, I decided to go with SPA on this framework.
 
 ## Using React and Vite
 
@@ -218,7 +218,7 @@ After you add navigation to you SPA, things might get complicated.
 
 First, `BrowserRouter` won't work, because every time you click a link, it will
 refresh and give a 404 from github. This error is nasty because it won't happen
-in your local development ambient.
+in your local development environment.
 
 If the files were being server with nginx, this would be easly resolved by
 adding the following in the conf file:
