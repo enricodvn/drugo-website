@@ -3,6 +3,10 @@
 In this section I post about my opinions on many diverse topics, from politics
 to life, universe and everything.
 
+## [My 2024 goals](/articles/personal/my_2024_goals)
+#### *by Drugo at 2024/01/03*
+What I have in mind for 2024.
+
 ## [Welcome 2024](/articles/personal/welcome_2024)
 #### *by Drugo at 2024/01/01*
 Happy new year!
