@@ -19,7 +19,10 @@ function Category() {
     <div className="content">
       <ReactMarkdown
       components={{
-        a: ({node, ...props}) => <Link to={props.href} {...props} />
+        a: ({node, ...props}) => {
+          if (!props.href) return <a {...props} />;
+          return <Link to={props.href} {...props} />;
+        }
       }}
       children={categoryMd} />
     </div>
