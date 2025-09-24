@@ -3,6 +3,10 @@
 In this section I post about my opinions on many diverse topics, from politics
 to life, universe and everything.
 
+## [Shame on me](/articles/personal/my_2024_goals)
+#### *by Drugo at 2025/09/25*
+What I am doing in 2025.
+
 ## [My 2024 goals](/articles/personal/my_2024_goals)
 #### *by Drugo at 2024/01/03*
 What I have in mind for 2024.
