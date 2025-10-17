@@ -154,9 +154,9 @@ function Category() {
   return (
     <div className="content">
       <ReactMarkdown
-      components={{
+      components={ {
         a: ({node, ...props}) => <Link to={props.href} {...props} />
-      }}
+      } }
       children={categoryMd} />
     </div>
   )
