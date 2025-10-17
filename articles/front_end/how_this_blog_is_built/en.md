@@ -47,7 +47,7 @@ keep me procrastinating for a while.
 
 I later came along [Pelican](https://getpelican.com/). It's on python, so I had
 no more excuse. It's is also pretty darn cool. But after a little bit playing with it,
-I also found [hugo](https://getpelican.com/). It is built with go lang, and it is pretty
+I also found [hugo](https://gohugo.io/). It is built with go lang, and it is pretty
 fast, aimed to performance. I also always wanted to learn Go...
 
 Anyway, the disadvantage of SSG is that the resulting websites are not so interactive
@@ -183,7 +183,7 @@ Some description of the article
 
 So when someone clicks on the article title, it is now rendering a Link component
 which will route to the article pages, that will fectch the markdown based on the
-slugs we added the the path params. Cool right?
+slugs we added to the path params. Cool right?
 
 The app is then just a `HashRouter` (as discussed before) that wraps it all:
 
@@ -263,5 +263,5 @@ I also encourage you to build your own personal website! If you like, you can
 clone this one and use it as a base! You can find the repo [here](https://github.com/enricodvn/drugo-website/).
 
 In the end, for a blog hosted on gh-pages, I think the easist way is using one of those SSG tools
-I discussed, but if you want more control, like me, just build your own by scratch, there are endless
+I discussed about, but if you want more control, like me, just build your own by scratch, there are endless
 possibilities, just keep building!
